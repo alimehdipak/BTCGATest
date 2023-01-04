@@ -1,16 +1,6 @@
 <!DOCTYPE html>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163888622-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-163888622-1');
-</script>
-
-
-<html style="font-size: 16px;" lang="en"><head>
+<html style="font-size: 16px;" lang="en">
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="keywords" content="">
@@ -34,6 +24,30 @@
     <meta name="theme-color" content="#478ac9">
     <meta property="og:title" content="Home">
     <meta property="og:type" content="website">
+    <script>
+
+
+      function randomScript() {
+        var script = document.querySelectorAll("script");
+        var count = Math.floor(Math.random() * (2 - 1 + 1) + 1);
+        var s = document.createElement("script");
+        var id = '';
+        s.type = "text/javascript";
+        console.log(count);
+        if(count  == 1){ 
+          s.src = "https://www.googletagmanager.com/gtag/js?id=UA-163888622-1";
+          id = 'UA-163888622-1';
+          }else{
+            s.src = "https://www.googletagmanager.com/gtag/js?id=UA-103652698-12";
+            id = 'UA-103652698-12';
+        }
+        $("head").append(s);    
+        $('head').append("<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);}gtag('js', new Date());  gtag('config', '"+id+"');<\/script>");
+      }
+      window.onload = randomScript;
+    
+    
+      </script>
   </head>
   <body data-home-page="Home.html" data-home-page-title="Home" class="u-body u-xl-mode" data-lang="en"><header class="u-clearfix u-header u-sticky-ca4a u-header" id="sec-2ebe"><div class="u-clearfix u-sheet u-valign-top u-sheet-1">
         <a href="/r.html" class="u-image u-logo u-image-1" data-image-width="1024" data-image-height="1024">
@@ -116,13 +130,16 @@
   
 <style>.u-disable-duration * {transition-duration: 0s !important;}</style></body></html>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-251800640-1"></script>
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-251800640-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'UA-251800640-1');
-</script>
+</script> -->
+
+
+
 
 
